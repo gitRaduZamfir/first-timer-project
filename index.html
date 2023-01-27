@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Countdown Timer Project</title>
+  </head>
+  <body>
+    <section class="timer">
+      <header>
+        <div class="input_space">
+          <label id="labelID" for="countdown">Countdown to:</label>
+          <input type="datetime-local" id="countdown" name="countdown" />
+          <button id="startBtn" class="start_btn">Start</button>
+        </div>
+      </header>
+      <div id="timer" class="timer_all">
+        <div class="timer_all_days">
+          <div id="daysID" class="timer_all_days_value">0</div>
+          <div class="timer_all_days_name">DAYS</div>
+        </div>
+        <div class="timer_all_hours">
+          <div id="hoursID" class="timer_all_hours_value">0</div>
+          <div class="timer_all_hours_name">HOURS</div>
+        </div>
+        <div class="timer_all_minutes">
+          <div id="minutesID" class="timer_all_minutes_value">0</div>
+          <div class="timer_all_minutes_name">MINUTES</div>
+        </div>
+        <div class="timer_all_seconds">
+          <div id="secondsID" class="timer_all_seconds_value">0</div>
+          <div class="timer_all_seconds_name">SECONDS</div>
+        </div>
+      </div>
+      <div id="message" class="countdown_message">Countdown is over!</div>
+      <button id="refresh_btn" class="refresh_btn">
+        <span class="material-symbols-outlined"> refresh </span>
+      </button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
