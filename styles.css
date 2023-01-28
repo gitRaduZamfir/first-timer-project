@@ -1,200 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;300;500;700&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: "Martian Mono", sans-serif;
-  font-weight: 100;
-  background-color: #ee6b6e;
-}
-
-.timer {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 90vh;
-}
-
-header {
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-
-.timer_all {
-  margin: auto;
-  justify-content: center;
-  display: flex;
-  background-color: #eb7f81;
-  box-shadow: 5px 5px #434343;
-  border-radius: 20px;
-  z-index: 1;
-}
-
-.timer_all_active {
-  filter: blur(5px);
-}
-
-.timer_all_days {
-  padding: 0 2rem;
-
-  margin: 1rem;
-}
-
-.timer_all_days_name {
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: white;
-  text-shadow: 5px 5px #5b5b5b;
-}
-.timer_all_days_value {
-  font-size: 8rem;
-  color: rgb(251, 255, 146);
-  text-shadow: 5px 5px #595959;
-  text-align: center;
-}
-
-.timer_all_hours {
-  padding: 0 2rem;
-
-  margin: 1rem;
-}
-
-.timer_all_hours_name {
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: white;
-  text-shadow: 5px 5px #5b5b5b;
-}
-.timer_all_hours_value {
-  font-size: 8rem;
-  color: rgb(146, 179, 255);
-  text-shadow: 5px 5px #595959;
-  text-align: center;
-}
-
-.timer_all_minutes {
-  padding: 0 2rem;
-
-  margin: 1rem;
-}
-
-.timer_all_minutes_name {
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: white;
-  text-shadow: 5px 5px #5b5b5b;
-}
-.timer_all_minutes_value {
-  font-size: 8rem;
-  color: rgb(146, 255, 210);
-  text-shadow: 5px 5px #595959;
-  text-align: center;
-}
-
-.timer_all_seconds {
-  padding: 0 2rem;
-
-  margin: 1rem;
-}
-
-.timer_all_seconds_name {
-  font-size: 2rem;
-  text-align: center;
-  padding-bottom: 1rem;
-  color: white;
-  text-shadow: 5px 5px #5b5b5b;
-}
-.timer_all_seconds_value {
-  font-size: 8rem;
-  color: rgb(255, 109, 233);
-  text-shadow: 5px 5px #595959;
-  text-align: center;
 }
 
 .countdown_message {
-  margin: auto;
-  font-size: 3rem;
-  text-align: center;
   display: none;
-  color: white;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 5px 5px #595959;
-  background-color: #eb7fd5;
-  padding: 2rem;
-  box-shadow: 5px 5px #434343;
-  border-radius: 20px;
-  z-index: 2;
-  margin-top: 2rem;
 }
 
 .countdown_message_active {
   display: block;
-}
-
-label {
-  color: white;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: 5px 5px #595959;
-  text-align: center;
-  border-radius: 20px;
-}
-
-.label_active {
-  filter: blur(5px);
-}
-
-.start_btn {
-  padding: 1rem;
-  background-color: #eb7f81;
-  box-shadow: 5px 5px #434343;
-  border-radius: 20px;
-  color: white;
-  font-family: "Martian Mono", sans-serif;
-  font-weight: 500;
-}
-
-.button_active {
-  filter: blur(5px);
-}
-
-input {
-  padding: 0.9rem;
-  background-color: #eb7f81;
-  box-shadow: 5px 5px #434343;
-  border-radius: 20px;
-  color: white;
-  font-family: "Martian Mono", sans-serif;
-  font-weight: 500;
-}
-
-.input_active {
-  filter: blur(5px);
-}
-
-.refresh_btn {
-  margin: auto;
-  padding: 1rem;
-  background-color: #eb7f81;
-  box-shadow: 5px 5px #434343;
-  border-radius: 20px;
-  color: white;
-  font-family: "Martian Mono", sans-serif;
-  font-weight: 500;
-  margin-top: 2rem;
+  box-shadow: 3px 3px #434343;
+  text-shadow: 3px 3px #757575;
 }
 
 .material-symbols-outlined {
-  font-size: 3rem;
-  color: rgb(146, 255, 210);
-  text-shadow: 3px 3px #595959;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+
+  box-shadow: 3px 3px #727272;
+
   text-align: center;
+}
+
+.start_btn {
+  box-shadow: 3px 3px #727272;
+}
+
+.main,
+.countdown_label {
+  text-shadow: 3px 3px #757575;
+}
+
+/*confetti animation*/
+
+canvas {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
 }

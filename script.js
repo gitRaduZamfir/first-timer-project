@@ -8,6 +8,10 @@ let timer = document.getElementById("timer");
 let inputValue = document.getElementById("countdown");
 let label = document.getElementById("labelID");
 let refresh = document.getElementById("refresh_btn");
+let sectionOne = document.getElementById("section_one");
+let sectionTwo = document.getElementById("section_two");
+let sectionThree = document.getElementById("section_three");
+let mainId = document.getElementById("mainID");
 
 let intervalId;
 
@@ -28,10 +32,11 @@ function countDownFn(x) {
     if (count <= 0) {
       clearInterval(intervalId);
       message.classList.add("countdown_message_active");
-      label.classList.add("label_active");
-      startBtn.classList.add("button_active");
-      inputValue.classList.add("input_active");
-      timer.classList.add("timer_all_active");
+      canvas.classList.remove("hidden");
+      mainId.classList.remove("my-20");
+      DrawC();
+      sectionOne.classList.add("hidden");
+      sectionTwo.classList.add("hidden");
     }
   }, 1000);
 }
