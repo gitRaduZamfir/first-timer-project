@@ -9,10 +9,12 @@ let inputValue = document.getElementById("countdown");
 let label = document.getElementById("labelID");
 let refresh = document.getElementById("refresh_btn");
 
+let intervalId;
+
 function countDownFn(x) {
   let count = x;
 
-  let intervalId = setInterval(function () {
+  intervalId = setInterval(function () {
     count--;
     let days = Math.floor(count / 86400);
     defDays.textContent = days;
@@ -35,6 +37,7 @@ function countDownFn(x) {
 }
 
 startBtn.addEventListener("click", function () {
+  clearInterval(intervalId);
   let date = new Date(inputValue.value);
   let currentDate = new Date();
   let secondsCount = Math.floor((date - currentDate) / 1000);
