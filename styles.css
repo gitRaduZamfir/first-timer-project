@@ -33,7 +33,6 @@ body {
 }
 
 /*confetti animation*/
-
 canvas {
   overflow-y: hidden;
   overflow-x: hidden;
